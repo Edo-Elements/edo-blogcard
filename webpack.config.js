@@ -4,8 +4,11 @@ module.exports = {
   mode: "none",
   entry: "./edo-blogcard.lit",
   output: {
-    path: path.resolve(".", 'dist'),
+    path: path.resolve(".", "dist"),
     filename: "edo-blogcard.bundle.js"
+  },
+  optimization: {
+    minimize: true
   },
   module: {
     rules: [
