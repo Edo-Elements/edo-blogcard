@@ -1,0 +1,29 @@
+<style lang="postcss">
+</style>
+
+<template>
+  <iron-ajax
+             auto
+             url="${this.url}"
+             handle-as="text"
+             @response="${this.handleResponse}"
+             debounce-duration="300">
+  </iron-ajax>
+</template>
+
+<script>
+  import '@polymer/iron-ajax/iron-ajax.js';
+
+  export default class EdoBlogcard {
+    static get properties() {
+      return {
+        url: String
+      };
+    }
+    handleResponse(e) {
+      console.log('EVENT', e);
+    }
+  }
+
+  window.customElements.define('edo-blogcard', EdoBlogcard);
+</script>

@@ -1,0 +1,42 @@
+{
+  "name": "@edo-elements/edo-blogcard",
+  "version": "1.0.0",
+  "description": "BlogCard web components",
+  "main": "dist/blog-cards.js",
+  "scripts": {
+    "build": "node build.js",
+    "bundle": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edo-Elements/edo-blogcard.git"
+  },
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "blog",
+    "blogcard"
+  ],
+  "author": "Kenichiro Kishida <sizuhiko@gmail.com> (https://github.com/sizuhiko)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Edo-Elements/edo-blogcard/issues"
+  },
+  "homepage": "https://github.com/Edo-Elements/edo-blogcard#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "lit-element": "^2.1.0",
+    "lit-loader": "^0.1.0",
+    "loader-runner": "^3.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "@polymer/iron-ajax": "^3.0.1"
+  }
+}
